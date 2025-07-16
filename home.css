@@ -1,0 +1,240 @@
+/* Reset & cơ bản */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 60px; /* to hơn nhưng vừa phải */
+  margin-right: 0px; /* giảm khoảng cách chữ và logo */
+}
+
+header .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin: 0; /* xoá khoảng trắng thừa */
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #eaeaea;
+}
+/* Hero Section */
+/* Hero đứng bên phải, bo góc, cao hẹp */
+.hero {
+  position: absolute;
+  top: 80px; /* bạn có thể điều chỉnh khoảng cách với header */
+  right: 10px; /* đẩy nó sang phải */
+  width: 300px;  /* chiều rộng hẹp */
+  height: 710px; /* chiều cao lớn */
+  background: linear-gradient(to bottom, #e0f7fa, #e3f2fd);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  z-index: 10;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  background: #1e88e5;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero a:hover {
+  background: #1565c0;
+}
+
+/* Hero Section đã có sẵn, chỉ thêm phần dưới thôi */
+
+/* Logo giữa */
+.hero-logo-box {
+  margin-bottom: 30px;
+}
+
+.hero-logo {
+  height: 150px;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+/* Ô tìm kiếm dưới logo */
+.hero-search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hero-search-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 250px;
+  max-width: 80%;
+  outline: none;
+}
+
+.hero-search-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-search-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Featured Projects */
+.featured {
+  padding: 20px 10px;
+  max-width: 300px;
+  margin: -40px 10px 10px 10px;
+  text-align: left;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* About */
+.about {
+  padding: 60px 10px;
+  max-width: 800px;
+  margin: 40px;
+  text-align: left;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+  text-decoration: none;   /* Xóa gạch chân */
+  color: inherit;          /* Kế thừa màu chữ */
+  display: block;          /* Đảm bảo toàn bộ khối bấm được */
+}
