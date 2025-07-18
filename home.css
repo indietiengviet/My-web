@@ -157,7 +157,7 @@ nav a:hover {
   top: 80px; /* bạn có thể điều chỉnh khoảng cách với header */
   right: 10px; /* đẩy nó sang phải */
   width: 300px;  /* chiều rộng hẹp */
-  height: 710px; /* chiều cao lớn */
+  height: 650px; /* chiều cao lớn */
   background: linear-gradient(to bottom, #e0f7fa, #e3f2fd);
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
