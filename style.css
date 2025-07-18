@@ -348,7 +348,8 @@ ul {
   .logo-img {
     height: 80px;
     position: relative;
-    top: 8px;
+    top: 10px;
+    left: 5px;
     display: block;
   }
 
