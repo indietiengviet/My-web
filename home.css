@@ -340,31 +340,3 @@ footer {
   color: inherit;          /* Kế thừa màu chữ */
   display: block;          /* Đảm bảo toàn bộ khối bấm được */
 }
-
-@media (max-width: 768px) {
-  .featured {
-    padding: 10px 5px;
-    max-width: 50%;
-    margin: -20px 5px 10px 5px;
-  }
-
-  .featured h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-  .card {
-    padding: 15px;
-  }
-
-  .card h3 {
-    font-size: 1.1rem;
-  }
-
-  .card p {
-    font-size: 0.85rem;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 card mỗi hàng */
-    gap: 10px;
